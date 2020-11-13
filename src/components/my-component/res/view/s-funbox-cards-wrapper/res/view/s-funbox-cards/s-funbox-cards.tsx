@@ -77,13 +77,11 @@ export class SFunboxCards {
    */
   public addRemoveClass(id) {
     if (id === this.cardContent.id && this.toggleClassState) {
+      this.cardWrapperTag.classList.remove('selected-hover')
       this.cardWrapperTag.classList.add('selected');
     } else {
-      this.cardWrapperTag.classList.remove('selected');
+      this.cardWrapperTag.classList.remove('selected', 'selected-hover');
     }
-    this.cardWrapperTag.addEventListener('mouseleave', () => {
-      this.cardWrapperTag.classList.add('selected-card')
-    })
   }
 
   /**

@@ -191,7 +191,6 @@ h1, h2, h3 {
 }
 
 .enabled:hover .info {
-  box-shadow: 0 1px 0 1px #000000;
   color: #ffffff;
   opacity: 0.8;
 }
